@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WRB9MHF42"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WRB9MHF42');
+</script>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jonathan Raysor</title>
+  <link rel="icon" href="images/tree.ico" type="image/x-icon">
+  <meta name="description" content="Software Engineer at Sony Music">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/dot.png">
+
+  <!-- jsQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+  $(document).ready(function(){
+      $("#moon").click(function(){
+          $("body").addClass("day");
+          $("body").removeClass("night");
+      });
+      $("#sun").click(function(){
+          $("body").removeClass("day");
+          $("body").addClass("night");
+      });
+  });
+
+</script>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 17, 2023 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = now - countDownDate;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="counter"
+    document.getElementById("counter").innerHTML = days + " days, " + hours + " hour" + (hours === 1 ? "" : "s") + ", " + minutes + " minute" + (minutes === 1 ? "" : "s") + ", and "  + seconds + " second" + (seconds === 1 ? "" : "s");
+    
+    // If the count down errors, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "year";
+    }
+}, 1000);
+</script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<body class="day">
+<div class="container animated fadeIn one">
+  <div class="row group">
+    <div class="three columns icon">
+   		<img src="images/moon.svg" id="moon">
+      <img src="images/sun.svg" id="sun">
+    </div>
+
+    <div class="six columns offset-by-three">
+      <h1 class="night">My name is <a href="https://www.linkedin.com/in/jonathanraysor/" target="_blank" class = underline">Jonathan Raysor</a>.</h1>
+
+      <div class="animated fadeIn two">
+       <p>I’ve been engineering at <a href="https://sonymusic.com/" target="_blank" class="underline">Sony Music</a> for the last <span id="counter"><br></span>.</p>
+
+       <p>I was born and raised in East New York, Brooklyn. Still in the greatest city in the world but, itching for some consistent, natural warmth. On a never ending quest to explore something new, sometimes I document it on my <a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Instagram</a>.</p>
+
+      <div class="spacer48"></div>
+
+      </div>
+
+      <h4 class="animated fadeIn three">Previously<h4> 
+
+    </div>
+
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">      
+      <h2 class="night"><a href="https://chainalysis.com/" target="_blank" class="underline">Chainalysis</a></h2>
+    </div>  
+    <div class="three columns animated fadeIn three">
+      <h3>Software Engineer</h3>
+      <h4>2021-2023</h4>
+    </div>
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">      
+      <h2 class="night"><a href="https://citi.com/" target="_blank" class="underline">Citi</a></h2>
+    </div>  
+    <div class="three columns animated fadeIn three">
+      <h3>Software Engineer</h3>
+      <h4>2020-2021</h4>
+    </div>
+  </div>  
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">  
+        <h2 class="night"><a href="https://mastercard.com/" target="_blank" class="underline">Mastercard</a></h2>
+    </div>  
+    <div class="three columns animated fadeIn three">
+      <h3>Software Engineer Intern</h3>
+      <h4>Summer 2019</h4>
+    </div>
+
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">    
+        <h4 class="animated fadeIn three">Passions</h4> 
+  
+        <p><a href="https://music.apple.com/profile/JonRaysor" target="_blank" class="underline">Music</a></p>
+        <p><a href="https://github.com/jonraysor" target="_blank" class="underline">Building</a></p>
+        <p><a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Photography</a><p>
+        <p><a href="mailto:jonathan@jonraysor.com" target="_blank" class="underline">Consulting</a><p>
+
+    </div>  
+  </div>
+
+</div>
+</body>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
