@@ -26,7 +26,6 @@
             fetch("https://pu4o1bnhyb.execute-api.us-east-2.amazonaws.com/MailFormSubmission/submit-form", {
                 method: "POST",
                 headers: {
-                    // Explicitly set content type to avoid issues
                     "Content-Type": "application/x-www-form-urlencoded",
                 },
                 body: new URLSearchParams(formData).toString(),
@@ -34,13 +33,11 @@
             .then(response => response.json())
             .then(data => {
                 console.log("Success:", data);
-                
-                window.location.href = "index.html";
+                redirectToHomepage();
             })
             .catch(error => {
                 console.error("Error:", error);
             });
-            redirectToHomepage();
         }
     </script>
     <script>
