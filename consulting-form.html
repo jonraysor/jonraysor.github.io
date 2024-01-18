@@ -16,16 +16,13 @@
     <meta name="description" content="Raysor LLC Consulting">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <script>
         function submitForm() {
-            // Get form data
             var formData = new FormData(document.getElementById("contactForm"));
     
-            // Send form data to API
             fetch("https://pu4o1bnhyb.execute-api.us-east-2.amazonaws.com/MailFormSubmission/submit-form", {
                 method: "POST",
                 headers: {
@@ -43,11 +40,11 @@
             .catch(error => {
                 console.error("Error:", error);
             });
+            redirectToHomepage();
         }
     </script>
     <script>
-    async function validateAndSubmit() {
-            // Get form data
+    function validateAndSubmit() {
             var contactForm = {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
@@ -60,7 +57,7 @@
                 if (contactForm.hasOwnProperty(key) && document.getElementById(key).hasAttribute("required")) {
                     if (contactForm[key].trim() === "") {
                         alert("Please fill in all required fields.");
-                        return; // Stop the submission if any required field is empty
+                        return; 
                     }
                     if (key === "email" && !isValidEmail(contactForm[key])) {
                         alert("Please enter a valid email address.");
@@ -77,13 +74,11 @@
             submitForm();
         }
     
-        // Function to validate email format
         function isValidEmail(email) {
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
     
-        // Function to validate phone number format
         function isValidPhoneNumber(phoneNumber) {
             var phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
             return phoneRegex.test(phoneNumber);
@@ -102,7 +97,7 @@
 <body class="day">
     <div class="container animated fadeIn one">
     <div class="row group">
-        <div class="six columns offset-by-three animated fadeIn three">  
+        <div class="six columns offset-by-three animated fadeIn one">  
             <form id="contactForm">
                 <label for="name">Name *</label>
                 <input type="text" id="name" name="name" required>
