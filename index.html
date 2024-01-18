@@ -10,33 +10,18 @@
 
     gtag('config', 'G-1WRB9MHF42');
 </script>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Jonathan Raysor</title>
   <link rel="icon" href="images/tree.ico" type="image/x-icon">
   <meta name="description" content="Software Engineer at Sony Music">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-      $("#moon").click(function(){
-          $("body").addClass("day");
-          $("body").removeClass("night");
-      });
-      $("#sun").click(function(){
-          $("body").removeClass("day");
-          $("body").addClass("night");
-      });
-  });
-
 </script>
 
 
@@ -62,6 +47,12 @@ var x = setInterval(function() {
     }
 }, 1000);
 </script>
+
+<script>
+  function redirectToConsulting() {
+      window.location.href = 'consulting-form.html';
+  }
+</script>
 </head>
 <body>
 
@@ -69,14 +60,16 @@ var x = setInterval(function() {
 <div class="container animated fadeIn one">
   <div class="row group">
     <div class="three columns icon">
-   		<img src="images/moon.svg" id="moon">
-      <img src="images/sun.svg" id="sun">
+      <img src="images/tree.png" id ="tree">
     </div>
 
     <div class="six columns offset-by-three">
       <h1 class="night">My name is <a href="https://www.linkedin.com/in/jonathanraysor/" target="_blank" class = underline">Jonathan Raysor</a>.</h1>
 
       <div class="animated fadeIn two">
+       <p>Engieering and technology is my trade. If you any vision you want to bring to reality and would like consultation,
+        reach out to me <a href="#" onclick="redirectToConsulting()" class="underline">here</a>.</p>
+
        <p>I’ve been building software for <a href="https://sonymusic.com/" target="_blank" class="underline">Sony Music</a> for the last <span id="counter"><br></span>.</p>
 
        <p>I was born and raised in East New York, Brooklyn. I'm on a quest to fulfill my creative itch, sometimes I document it on <a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Instagram</a>.
@@ -131,7 +124,7 @@ var x = setInterval(function() {
         <p><a href="https://music.apple.com/profile/JonRaysor" target="_blank" class="underline">Music</a></p>
         <p><a href="https://github.com/jonraysor" target="_blank" class="underline">Building</a></p>
         <p><a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Photography</a><p>
-        <p><a href="mailto:jonathan@jonraysor.com" target="_blank" class="underline">Consulting</a><p>
+        <p><a href="#" onclick="redirectToConsulting()" class="underline">Consulting</a><p>
 
     </div>  
   </div>

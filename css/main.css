@@ -152,6 +152,39 @@ body.day h4 {
 	text-transform: uppercase;
 }
 
+body.day label {
+	font-weight: 200;
+	color: #493A35;
+	font-family: NeueHaas;
+	font-size: 12px;
+	letter-spacing: 0.35px;
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+
+body.day button {
+	font-weight: 100;
+	background-color: #8D8B55;
+	color: #433B39;
+	font-family: NeueHaas;
+	font-size: 12px;
+	letter-spacing: 0.35px;
+	line-height: 20px;
+	margin-top: 0px;
+	text-transform: none;
+	border: 1px solid #BBB99A;
+	border-radius: 5px;
+}
+
+
+body.day textarea, input{
+	color: #433B39;
+	font-family: NeueHaas;
+	font-size: 12px;
+	opacity: .4;
+	width: 100%;
+}
+
 body.night #moon {
 	cursor: pointer;
 	width: 20px;
@@ -191,12 +224,5 @@ body.day #sun {
 	width: 20px;
 	float: right
 }
-
-
-
-
-/* Day mode styling */
-
-
 
 }
