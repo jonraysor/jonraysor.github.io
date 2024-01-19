@@ -87,6 +87,23 @@ body.night h1 {
 	padding-bottom: 48px;
 }
 
+body.consult {
+	background-color: #8D8B55;
+	color: #493A35;
+	font-family: NeueHaas;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body.consult h1{
+	color: #493A35;
+	font-family: NeueHaasMedium;
+	font-size: 20px;
+	letter-spacing: .25px;
+	line-height: 28px;
+	padding-bottom: 24px;
+}
+
 body.day h1 {
 	color: #493A35;
 	font-family: NeueHaasMedium;
@@ -95,6 +112,7 @@ body.day h1 {
 	line-height: 28px;
 	padding-bottom: 48px;
 }
+
 
 body.night h2 {
 	color: #8D8B55;
@@ -152,7 +170,7 @@ body.day h4 {
 	text-transform: uppercase;
 }
 
-body.day label {
+body.consult label {
 	font-weight: 200;
 	color: #493A35;
 	font-family: NeueHaas;
@@ -162,7 +180,7 @@ body.day label {
 	margin-bottom: 4px;
 }
 
-body.day button {
+body.consult button {
 	font-weight: 100;
 	background-color: #8D8B55;
 	color: #433B39;
@@ -177,7 +195,7 @@ body.day button {
 }
 
 
-body.day textarea, input{
+body.consult textarea, input{
 	color: #433B39;
 	font-family: NeueHaas;
 	font-size: 12px;

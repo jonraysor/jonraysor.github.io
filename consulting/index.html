@@ -12,13 +12,13 @@
 
     <meta charset="UTF-8">
     <title>Consultation</title>
-    <link rel="icon" href="images/tree.ico" type="image/x-icon">
+    <link rel="icon" href="../images/tree.ico" type="image/x-icon">
     <meta name="description" content="Raysor LLC Consulting">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <script>
         function submitForm() {
             var formData = new FormData(document.getElementById("contactForm"));
@@ -49,7 +49,6 @@
                 idea: document.getElementById("idea").value
             };
     
-            // Validate each required field
             for (var key in contactForm) {
                 if (contactForm.hasOwnProperty(key) && document.getElementById(key).hasAttribute("required")) {
                     if (contactForm[key].trim() === "") {
@@ -86,15 +85,18 @@
     
     <script>
         function redirectToHomepage() {
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         }
     </script>
 </head>
 
-<body class="day">
-    <div class="container animated fadeIn one">
+<body class="consult">
+    <div class="container">
     <div class="row group">
         <div class="six columns offset-by-three animated fadeIn one">  
+        <h1 class="consult">Share your vision.</h1>
+        </div>
+        <div class="six columns offset-by-three animated fadeIn two">  
             <form id="contactForm">
                 <label for="name">Name *</label>
                 <input type="text" id="name" name="name" required>
