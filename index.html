@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WRB9MHF42"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WRB9MHF42"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-1WRB9MHF42');
-</script>
+  </script>
   <meta charset="utf-8">
   <title>Jonathan Raysor</title>
   <link rel="icon" href="images/tree.ico" type="image/x-icon">
@@ -22,127 +23,155 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-</script>
+  </script>
 
 
-<script>
-var countDownDate = new Date("Jul 17, 2023 09:00:00").getTime();
+  <script>
+    var countDownDate = new Date("Jul 17, 2023 09:00:00").getTime();
 
-var x = setInterval(function() {
+    var x = setInterval(function () {
 
-    var now = new Date().getTime();
-    
-    var distance = now - countDownDate;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("counter").innerHTML = days + " days, " + hours + " hour" + (hours === 1 ? "" : "s") + ", " + minutes + " minute" + (minutes === 1 ? "" : "s") + ", and "  + seconds + " second" + (seconds === 1 ? "" : "s");
-    
-    if (distance < 0) {
+      var now = new Date().getTime();
+
+      var distance = now - countDownDate;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("counter").innerHTML = days + "d, " + hours + "h" + ", " + minutes + "m " + seconds + "s";
+
+      if (distance < 0) {
         clearInterval(x);
         document.getElementById("counter").innerHTML = "year";
-    }
-}, 1000);
-</script>
+      }
+    }, 1000);
+  </script>
 
-<script>
-  function redirectToConsulting() {
+  <script>
+    function redirectToConsulting() {
       window.location.href = './consulting';
-  }
-</script>
+    }
+  </script>
 </head>
+
 <body>
 
-<body class="day">
-<div class="container animated fadeIn one">
-  <div class="row group">
-    <div class="three columns icon">
-      <img src="images/tree.png" id ="tree">
-    </div>
+  <body class="day">
+    <div class="container animated fadeIn one">
+      <div class="row group">
+        <div class="three columns icon">
+          <img src="images/tree.png" id="tree">
+        </div>
 
-    <div class="six columns offset-by-three">
-      <h1 class="night">My name is <a href="https://www.linkedin.com/in/jonathanraysor/" target="_blank" class = underline">Jonathan Raysor</a>.</h1>
+        <div class="six columns offset-by-three">
+          <h1 class="night">My name is <a href="https://www.linkedin.com/in/jonathanraysor/" target="_blank"
+              class=underline">Jonathan Raysor</a>.</h1>
 
-      <div class="animated fadeIn two">
-       <p>Engieering and technology are my trade. If you have a vision you want to bring to life and would like consultation,
-        reach out to me <a href="#" onclick="redirectToConsulting()" class="underline">here</a>.</p>
+          <div class="animated fadeIn two">
 
-       <p>I’ve been building software for <a href="https://sonymusic.com/" target="_blank" class="underline">Sony Music</a> for the last <span id="counter"><br></span>.</p>
+            <p>I was born and raised in East New York, Brooklyn. I'm on a quest to fulfill my creative itch, sometimes I
+              document it on <a href="https://www.instagram.com/jonraysor/" target="_blank"
+                class="underline">Instagram</a>.</p>
 
-       <p>I was born and raised in East New York, Brooklyn. I'm on a quest to fulfill my creative itch, sometimes I document it on <a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Instagram</a>.</p>
+            <p>Engieering and technology are my trade. If you have a vision you want to bring to life and would like
+              consultation,
+              reach out to me <a href="#" onclick="redirectToConsulting()" class="underline">here</a>.</p>
+
+            <!-- <p>I’ve been building software for <a href="https://sonymusic.com/" target="_blank" class="underline">Sony Music</a> for the last <span id="counter"><br></span>.</p> -->
+
+            <div class="spacer48"></div>
+
+          </div>
+          <h4 class="animated fadeIn three">Currently<h4>
 
 
-      <div class="spacer48"></div>
+        </div>
 
       </div>
-        <h4 class="animated fadeIn three">Previously<h4> 
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://sonymusic.com/" target="_blank" class="underline">Sony Music</a></h2>
+
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Software Engineer</h3>
+          <h4 class="counter">
+            <span id="counter"></span>
+
+          </h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h4 class="animated fadeIn three">Previously</h4>
+          <h2 class="night"><a href="https://chainalysis.com/" target="_blank" class="underline">Chainalysis</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <div class="spacer40"></div>
+          <h3>Software Engineer</h3>
+          <h4>2021-2023</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://citi.com/" target="_blank" class="underline">Citi</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Software Engineer</h3>
+          <h4>2020-2021</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://mastercard.com/" target="_blank" class="underline">Mastercard</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Software Engineer</h3>
+          <h4>2019</h4>
+        </div>
+
+      </div>
+
+
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h4 class="animated fadeIn three">Passions</h4>
+
+          <p><a href="https://music.apple.com/profile/JonRaysor" target="_blank" class="underline">Music</a></p>
+          <p><a href="https://github.com/jonraysor" target="_blank" class="underline">Building</a></p>
+          <p><a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Photography</a>
+          <p>
+        </div>
+      </div>
+
+
+      <div class="six columns offset-by-six">
+        <div class="animated fadeIn two">
+          <div style="border-bottom: 1px solid #433B39;"></div>
+        </div>
+      </div>
+      <div class="spacer25"></div>
+
+
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h4 class="animated fadeIn three">Contact Me</h4>
+          <p><a href="#" onclick="redirectToConsulting()" class="underline">Consulting</a>
+          <p>
+        </div>
+      </div>
+
     </div>
+  </body>
 
-  </div>
-
-  <div class="row group">
-    <div class="three columns offset-by-six animated fadeIn three">   
-     
-
-      <h2 class="night"><a href="https://chainalysis.com/" target="_blank" class="underline">Chainalysis</a></h2>
-    </div>  
-    <div class="three columns animated fadeIn three">
-      <h3>Software Engineer</h3>
-      <h4>2021-2023</h4>
-    </div>
-  </div>
-
-  <div class="row group">
-    <div class="three columns offset-by-six animated fadeIn three">      
-      <h2 class="night"><a href="https://citi.com/" target="_blank" class="underline">Citi</a></h2>
-    </div>  
-    <div class="three columns animated fadeIn three">
-      <h3>Software Engineer</h3>
-      <h4>2020-2021</h4>
-    </div>
-  </div>  
-
-  <div class="row group">
-    <div class="three columns offset-by-six animated fadeIn three">  
-        <h2 class="night"><a href="https://mastercard.com/" target="_blank" class="underline">Mastercard</a></h2>
-    </div>  
-    <div class="three columns animated fadeIn three">
-      <h3>Software Engineer</h3>
-      <h4>2019</h4>
-    </div>
-
-  </div>
-
-
-
-  <div class="row group">
-    <div class="three columns offset-by-six animated fadeIn three">    
-        <h4 class="animated fadeIn three">Passions</h4> 
-  
-        <p><a href="https://music.apple.com/profile/JonRaysor" target="_blank" class="underline">Music</a></p>
-        <p><a href="https://github.com/jonraysor" target="_blank" class="underline">Building</a></p>
-        <p><a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Photography</a><p>
-
-    </div>  
-  </div>
-
-  <div class="spacer48"></div>
-
-
-  <div class="row group">
-    <div class="three columns offset-by-six animated fadeIn three">    
-        <h4 class="animated fadeIn three">Contact Me</h4> 
-  
-        <p><a href="#" onclick="redirectToConsulting()" class="underline">Consulting</a><p>
-
-    </div>  
-  </div>
-
-</div>
 </body>
 
-</body>
 </html>

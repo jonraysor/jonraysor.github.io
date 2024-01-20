@@ -10,8 +10,8 @@
 
 * {
 	-webkit-font-smoothing: antialiased;
-	margin:0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body.night a {
@@ -27,32 +27,33 @@ body.day a {
 }
 
 .underline {
-  display: inline;
-  position: relative;
-  overflow: hidden;
-  width: 40px;
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	width: 40px;
 }
 
 .underline:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: -3px;
-  background: #67514A;
-  height: 1.5px;
-  transition-property: left right;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: -3px;
+	background: #67514A;
+	height: 1.5px;
+	transition-property: left right;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
 }
+
 .underline:hover:after,
 .underline:focus:after,
 .underline:active:after {
-  right: 0;
+	right: 0;
 }
 
-body.night {	
+body.night {
 	background-color: #493A35;
 	color: #8D8B55;
 	font-family: NeueHaas;
@@ -95,7 +96,7 @@ body.consult {
 	line-height: 24px;
 }
 
-body.consult h1{
+body.consult h1 {
 	color: #493A35;
 	font-family: NeueHaasMedium;
 	font-size: 20px;
@@ -167,7 +168,24 @@ body.day h4 {
 	letter-spacing: 1.5px;
 	line-height: 20px;
 	margin-top: 0px;
-	text-transform: uppercase;
+
+	/* text-transform: uppercase; */
+	& counter {
+		color: #433B39;
+		font-family: NeueHaas;
+		font-size: 6px;
+		letter-spacing: 1.5px;
+		line-height: 20px;
+		margin-top: 0px;
+		text-transform: uppercase;
+	}
+}
+
+body.day hr {
+	/* border-color:#433B39; */
+	border: none;
+	border-bottom: 1px solid #433B39;
+
 }
 
 body.consult label {
@@ -195,11 +213,22 @@ body.consult button {
 }
 
 
-body.consult textarea, input{
+body.consult textarea,
+input {
 	color: #433B39;
 	font-family: NeueHaas;
 	font-size: 12px;
 	opacity: .4;
+	width: 100%;
+}
+
+.spacer25 {
+	height: 25px;
+	width: 100%;
+}
+
+.spacer40 {
+	height: 40px;
 	width: 100%;
 }
 
@@ -209,14 +238,16 @@ body.consult textarea, input{
 }
 
 
+
+
 /* For devices smaller than 400px */
 @media (max-width: 550px) {
 
-body.day #tree {
-	margin-bottom: 80px;
-	padding-right: 8px;
-	width: 20px;
-	float: right
-}
+	body.day #tree {
+		margin-bottom: 80px;
+		padding-right: 8px;
+		width: 20px;
+		float: right
+	}
 
 }
