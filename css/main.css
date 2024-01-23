@@ -104,6 +104,53 @@ body.consult h1 {
 	line-height: 28px;
 	padding-bottom: 24px;
 }
+body.consult a{
+	color: #493A35;
+	font-family: NeueHaasMedium;
+	text-decoration: none;
+}
+
+body.consult .underline{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	width: 40px;
+}
+
+body.consult .underline:after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: -3px;
+	background: #67514A;
+	height: 1.5px;
+	transition-property: left right;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+}
+
+body.consult .underline{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	width: 40px;
+}
+
+body.consult .underline{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	width: 40px;
+}
+
+body.consult.underline:hover:after,
+body.consult.underline:focus:after,
+body.consult.underline:active:after {
+	right: 0;
+}
+
 
 body.day h1 {
 	color: #493A35;

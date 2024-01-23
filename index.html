@@ -54,6 +54,12 @@
       window.location.href = './consulting';
     }
   </script>
+
+  <script>
+    function redirectToAbout() {
+      window.location.href = './about';
+    }
+  </script>
 </head>
 
 <body>
@@ -129,11 +135,14 @@
       </div>
 
       <div class="row group">
+        <div class="spacer36"></div>
         <div class="three columns offset-by-six animated fadeIn three">
-          <h4 class="animated fadeIn three">Contact Me</h4>
-          <p><a href="#" onclick="redirectToConsulting()" class="underline">Consulting</a>
-          <p>
+          <h4 class="animated fadeIn three">More</h4>
+          <p><a href="#" onclick="redirectToAbout()" class="underline">About</a>
         </div>
+          <h4 class="animated fadeIn three">&nbsp;</h4>
+          <p class="animated fadeIn three"><a href="#" onclick="redirectToConsulting()" class="underline">Consulting</a></p>
+          <p>
       </div>
 
     </div>
