@@ -67,12 +67,13 @@ object-fit: cover;
 
 .footer {
 text-align: center;
-padding: 10px;
+padding: 4px;
 color: #493A35;
 font-family: NeueHaas;
-font-size: 21px;
+font-size: 2px;
 line-height: 24px;
 }
+
 body.night {
 	background-color: #493A35;
 	color: #F4F5F0;
