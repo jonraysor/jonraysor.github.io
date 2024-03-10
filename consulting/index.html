@@ -35,11 +35,11 @@
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log("Success:", data);
                     redirectToHomepage();
                 })
                 .catch(error => {
                     console.error("Error:", error);
+                    redirectToHomepage();
                 });
         }
     </script>
@@ -102,10 +102,10 @@
 <body class="consult">
     <div class="container">
         <div class="row group">
-            <div class="six columns offset-by-three animated fadeIn one">
+            <div class="six columns offset-by-three animated fadeIn three">
                 <h1 class="consult">Share your vision.</h1>
             </div>
-            <div class="six columns offset-by-three animated fadeIn two">
+            <div class="six columns offset-by-three animated fadeIn three">
                 <form id="contactForm">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -124,14 +124,14 @@
                 </form>
                 <div class="spacer36"></div>
                 <div class="row group">
-                    <div class="six columns  animated fadeIn four">
+                    <div class="six columns  animated fadeIn three">
                     <p class="animated fadeIn three"><a href="#" onclick="redirectToAbout()" class="underline">About</a></p>
                     </div>
                 </div>         
             </div>  
         </div>
     </div>
-    
+
 </body>
 
 </html>
