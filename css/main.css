@@ -106,7 +106,7 @@ body.night h1 {
 	font-size: 20px;
 	letter-spacing: .25px;
 	line-height: 28px;
-	padding-bottom: 48px;
+	/* padding-bottom: 48px; */
 }
 
 body.consult {
@@ -179,9 +179,17 @@ body.day h1 {
 	font-size: 20px;
 	letter-spacing: .25px;
 	line-height: 28px;
-	padding-bottom: 48px;
+	/* padding-bottom: 48px; */
 }
 
+body.day .city {
+	color: #493A35;
+	font-family: NeueHaasMedium;
+	font-size: 20px;
+	letter-spacing: .25px;
+	line-height: 28px;
+	padding-bottom: 48px;
+}
 
 body.night h2 {
 	color: #F4F5F0;
