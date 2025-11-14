@@ -1,0 +1,29 @@
+{
+  "name": "jonraysor.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonraysor/jonraysor.github.io.git"
+  },
+  "keywords": ["portfolio", "website", "typescript", "vite"],
+  "author": "Jonathan Raysor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonraysor/jonraysor.github.io/issues"
+  },
+  "homepage": "https://github.com/jonraysor/jonraysor.github.io#readme",
+  "description": "Personal portfolio website for Jonathan Raysor",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vite-plugin-imagemin": "^0.6.1"
+  }
+}

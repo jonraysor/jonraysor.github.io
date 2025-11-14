@@ -70,7 +70,7 @@ text-align: center;
 padding: 4px;
 color: #493A35;
 font-family: NeueHaas;
-font-size: 2px;
+font-size: 12px;
 line-height: 24px;
 }
 
@@ -152,23 +152,9 @@ body.consult .underline:after{
 	transition-timing-function: ease-out;
 }
 
-body.consult .underline{
-	display: inline;
-	position: relative;
-	overflow: hidden;
-	width: 40px;
-}
-
-body.consult .underline{
-	display: inline;
-	position: relative;
-	overflow: hidden;
-	width: 40px;
-}
-
-body.consult.underline:hover:after,
-body.consult.underline:focus:after,
-body.consult.underline:active:after {
+body.consult .underline:hover:after,
+body.consult .underline:focus:after,
+body.consult .underline:active:after {
 	right: 0;
 }
 

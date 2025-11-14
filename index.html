@@ -13,55 +13,17 @@
   </script>
   <meta charset="utf-8">
   <title>Jonathan Raysor</title>
-  <link rel="icon" href="images/tree.ico" type="image/x-icon">
+  <link rel="icon" href="/images/tree.ico" type="image/x-icon">
   <meta name="description" content="Software Engineer at Sony Music">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Jonathan Raysor"/>
-  <meta property="og:image" content="images/color_block_white.jpeg" />   
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <meta property="og:image" content="/images/color_block_white.jpeg" />   
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animate.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script>
-  </script>
-
-
-  <script>
-    var countDownDate = new Date("Jul 17, 2023 09:00:00").getTime();
-
-    var x = setInterval(function () {
-
-      var now = new Date().getTime();
-
-      var distance = now - countDownDate;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("counter").innerHTML = days + "d, " + hours + "h" + ", " + minutes + "m " + seconds + "s";
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("counter").innerHTML = "year";
-      }
-    }, 1000);
-  </script>
-
-  <script>
-    function redirectToConsulting() {
-      window.location.href = './consulting';
-    }
-  </script>
-
-  <script>
-    function redirectToAbout() {
-      window.location.href = './about';
-    }
-  </script>
+  <script type="module" src="/src/ts/main.ts"></script>
 </head>
 
 <body>
@@ -70,24 +32,24 @@
     <div class="container animated fadeIn one">
       <div class="row group">
         <div class="three columns icon">
-          <img src="images/tree.png" id="tree">
+          <img src="/images/tree.png" id="tree" alt="Tree icon">
         </div>
 
         <div class="six columns offset-by-three">
           <h1 class="night"><a href="https://www.linkedin.com/in/jonathanraysor/" target="_blank"
               class=underline>Jonathan Raysor</a>,</h1>
-              <h4 className="city">Brooklyn, New York</h4>
+              <h4 class="city">Brooklyn, New York</h4>
           <div class="animated fadeIn two">
 
             <p>I believe that a website is like a museum. It's akin to stepping off the train in front of the museum; just as the museum experience unfolds, the webpage loading should reveal pixels that embody personality, inspiration, and vision.
         
 
-            <p>Engineering and technology are my trade.<a href="#" onclick="redirectToConsulting()" class="underline"> Building is my passion</a>.</p>
+            <p>Engineering and technology are my trade.<a href="javascript:void(0)" onclick="redirectToConsulting()" class="underline"> Building is my passion</a>.</p>
 
             <div class="spacer36"></div>
 
           </div>
-          <h4 class="animated fadeIn two">Currently<h4>
+          <h4 class="animated fadeIn two">Currently</h4>
 
 
         </div>
@@ -130,16 +92,16 @@
           <p><a href="https://github.com/jonraysor" target="_blank" class="underline">Building</a></p>
           <p><a href="https://www.instagram.com/jonraysor/" target="_blank" class="underline">Photography</a></p>
           <div class="spacer36"></div>
-          <h4 class=" fadeIn four">More<h4>
+          <h4 class=" fadeIn four">More</h4>
         </div>
       </div>
 
       <div class="row group">    
         <div class="three columns offset-by-six animated fadeIn three">
-          <h2 class="night"><a href="#" onclick="redirectToAbout()" target="_blank" class="underline">About</a></h2>
+          <h2 class="night"><a href="javascript:void(0)" onclick="redirectToAbout()" class="underline">About</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
-          <h2 class="night"><a href="#" onclick="redirectToConsulting()" target="_blank" class="underline">Consulting</a></h2>
+          <h2 class="night"><a href="javascript:void(0)" onclick="redirectToConsulting()" class="underline">Consulting</a></h2>
         </div>
         <div class="three columns offset-by-six animated fadeIn three">
           <h2 class="night"><a href="mailto:jonathan@jonraysor.com" target="_blank" class="underline">Contact Me</a></h2>

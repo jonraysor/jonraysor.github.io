@@ -13,90 +13,17 @@
 
     <meta charset="UTF-8">
     <title>Consultation</title>
-    <link rel="icon" href="../images/tree.ico" type="image/x-icon">
+    <link rel="icon" href="/images/tree.ico" type="image/x-icon">
     <meta name="description" content="Raysor LLC Consulting">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Consulting"/>
-    <meta property="og:image" content="../images/color_block_white.jpeg" />    
-    <link rel="stylesheet" href="../css/skeleton.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <script>
-        function submitForm() {
-            var formData = new FormData(document.getElementById("contactForm"));
+    <meta property="og:image" content="/images/color_block_white.jpeg" />
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animate.css">
 
-            fetch("https://pu4o1bnhyb.execute-api.us-east-2.amazonaws.com/MailFormSubmission/submit-form", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-                body: new URLSearchParams(formData).toString(),
-            })
-                .then(response => response.json())
-                .then(data => {
-                    redirectToHomepage();
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    redirectToHomepage();
-                });
-        }
-    </script>
-    <script>
-        function validateAndSubmit() {
-            var contactForm = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                phone_number: document.getElementById("phone_number").value,
-                idea: document.getElementById("idea").value
-            };
-
-            for (var key in contactForm) {
-                if (contactForm.hasOwnProperty(key) && document.getElementById(key).hasAttribute("required")) {
-                    if (contactForm[key].trim() === "") {
-                        alert("Please fill in all required fields.");
-                        return;
-                    }
-                    if (key === "email" && !isValidEmail(contactForm[key])) {
-                        alert("Please enter a valid email address.");
-                        return;
-                    }
-
-                    if (key === "phone_number" && !isValidPhoneNumber(contactForm[key])) {
-                        alert("Please enter a valid phone number.");
-                        return;
-                    }
-                }
-            }
-
-            submitForm();
-        }
-
-        function isValidEmail(email) {
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
-        function isValidPhoneNumber(phoneNumber) {
-            var phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
-            return phoneRegex.test(phoneNumber);
-        }
-
-    </script>
-
-
-    <script>
-        function redirectToHomepage() {
-            window.location.href = '../index.html';
-        }
-    </script>
-
-    <script>
-        function redirectToAbout() {
-        window.location.href = '../about/';
-        }
-    </script>
+    <script type="module" src="/src/ts/consulting.ts"></script>
 </head>
 
 <body class="consult">
@@ -125,7 +52,7 @@
                 <div class="spacer36"></div>
                 <div class="row group">
                     <div class="six columns  animated fadeIn three">
-                    <p class="animated fadeIn three"><a href="#" onclick="redirectToAbout()" class="underline">About</a></p>
+                    <p class="animated fadeIn three"><a href="javascript:void(0)" onclick="redirectToAbout()" class="underline">About</a></p>
                     </div>
                 </div>         
             </div>  
